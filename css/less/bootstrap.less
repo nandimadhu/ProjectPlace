@@ -1,0 +1,232 @@
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+@import "glyphicons.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+@import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "responsive-embed.less";
+@import "wells.less";
+@import "close.less";
+
+// Components w/ JavaScript
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+
+
+// Custom styling
+
+body{
+	height: 100vh;
+	width: 100%;
+background: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	overflow-y:scroll;
+}
+
+.navbar{
+	background: #333;
+	border-radius: 0;
+	border:none;
+	.navbar-brand{
+
+	color:#6ce;
+		&:hover{
+			color:#6ce;
+		}
+	}
+}
+
+.main-div{
+
+	background: #f3f3f3;
+	@shadow:0 1px 1px rgba(0,0,0,0.07);
+	.box-shadow(@shadow);
+	min-height: 88vh;
+	width: 100%;
+float: left;
+}
+
+.main-tabs{
+	.nav-tabs{
+		border:none;
+		margin: 10px;
+		float: left;
+		width: 100%;
+	}
+	.tab-content{
+		float: left;
+		width: 100%;
+		margin: 10px;
+		margin-top: 0;
+	}
+	.nav-tabs>li>a{
+		border:1px solid #ddd;
+		margin-right: -1px;
+		border-radius: 0;
+	}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+border:1px solid #ddd;
+background: #f0f0f0;
+}
+}
+
+
+.user-post-textarea{
+textarea{
+	width: 96%;
+			resize: none;
+		border-color: #ddd;
+}
+	textarea:focus{
+		border-color: #ddd;
+	}
+}
+
+.textarea-actions{
+	float: left;
+	width: 96%;
+	.leftaction{
+		float: left;
+		margin-bottom: 0;
+		span{
+			float: left;
+			height: 35px;
+			width: 55px;
+			text-align: center;
+			font-size:17px;
+			padding-top: 7px;
+			cursor: pointer;
+		}
+
+	}
+	.rightaction{
+		float: right;
+			.btn{
+		border-radius: 0;
+		}
+	}
+}
+
+.user-eachpost{
+	background: #fff;
+	position: relative;
+	min-height: 30px;
+	width: 96%;
+	float: left;
+	margin: 10px 0;
+	@shadow:0 1px 1px rgba(0,0,0,0.07);
+	.box-shadow(@shadow);
+	padding: 8px;
+	border:1px solid #f5f5f5;
+
+	.media{
+		float: left;
+	}
+	.media-object{
+		padding: 5px;
+		border:1px solid #f5f5f5;
+			@shadow:0 1px 1px rgba(0,0,0,0.2);
+	.box-shadow(@shadow);
+
+	}
+
+	.media-body{
+
+		.media-heading{
+			font-size: 17px;
+		}
+		.media-actions{
+			padding: 5px;
+			border: 1px solid #ddd;
+			border-left:none;
+			border-right:none;
+			margin-bottom: 0;
+			margin-top: 4px;
+			font-size: 12px;
+			float: left;
+			width: 100%;
+			.media-leftactions{
+				float: left;
+				span{
+					float: left;
+					margin-right: 10px;
+					cursor: pointer;
+				}
+			}
+			.media-rightactions{
+				float: right;
+					span{
+					float: left;
+					margin-right: 15px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.usr-ep-extraoptions{
+		.abs-info,.abs-close{
+			position: absolute;
+			font-size: 18px;
+		}
+		.abs-info{
+			top:-8px;
+			left:-8px;
+			color: #f77716;
+		}
+		.abs-close{
+		color: #ddd;
+			right:10px;
+			cursor: pointer;
+			top:4px;
+			&:hover{
+				color: red;
+			}
+		}
+	}
+
+.usr-post-woutimg{
+	@shadow:inset 5px 0px 0px 0px #2790b0;;
+	.box-shadow(@shadow);
+}
